@@ -19,7 +19,7 @@ RUN apt-get update && \
 
 # install python dependencies
 RUN pip install openmim
-RUN pip install torch
+RUN pip install torch==2.0.0
 RUN mim install mmcv-full==1.7.0
 RUN pip install mmdet==2.27.0
 RUN pip install torchserve
